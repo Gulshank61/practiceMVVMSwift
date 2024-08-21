@@ -22,6 +22,7 @@
 		679ECD192C760D3400BF45C3 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679ECD182C760D3400BF45C3 /* UserCell.xib */; };
 		679ECD1A2C760D3400BF45C3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECD172C760D3400BF45C3 /* UserCell.swift */; };
 		679ECD1E2C76265D00BF45C3 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECD1D2C76265D00BF45C3 /* UIImage+Extensions.swift */; };
+		679ECD222C7635E400BF45C3 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECD212C7635E400BF45C3 /* DateUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		679ECD172C760D3400BF45C3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		679ECD182C760D3400BF45C3 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		679ECD1D2C76265D00BF45C3 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		679ECD212C7635E400BF45C3 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		679ECCEE2C75DFEB00BF45C3 /* practiceMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				679ECD202C7635CC00BF45C3 /* Utilities */,
 				679ECD1F2C76266300BF45C3 /* Extensions */,
 				679ECD0F2C75F69700BF45C3 /* Managers */,
 				679ECD062C75E08D00BF45C3 /* App */,
@@ -153,6 +156,14 @@
 				679ECD1D2C76265D00BF45C3 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		679ECD202C7635CC00BF45C3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				679ECD212C7635E400BF45C3 /* DateUtility.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 				679ECD132C7606EE00BF45C3 /* User.swift in Sources */,
 				679ECCF22C75DFEB00BF45C3 /* SceneDelegate.swift in Sources */,
 				679ECD1A2C760D3400BF45C3 /* UserCell.swift in Sources */,
+				679ECD222C7635E400BF45C3 /* DateUtility.swift in Sources */,
 				679ECD1E2C76265D00BF45C3 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

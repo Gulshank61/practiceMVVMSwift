@@ -19,6 +19,16 @@ struct UserData: Codable {
     let location: Location
     let email:String
     let picture: Picture
+    let dateOfBirth: DOB
+    
+    enum CodingKeys: String, CodingKey {
+        case gender
+        case name
+        case location
+        case email
+        case picture
+        case dateOfBirth = "dob"
+    }
 }
 
 // MARK: - Name
@@ -45,4 +55,10 @@ struct Coordinates: Codable {
 // MARK: - Picture
 struct Picture: Codable {
     let large: String
+}
+
+// MARK: - Date Of Birth
+struct DOB: Codable {
+    let date:String
+    let age:Int
 }

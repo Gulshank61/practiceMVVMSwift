@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         
         viewModel.users.bind(to: myTableView.rx.items(cellIdentifier: "UserCell", cellType: UserCell.self)) { row, user, cell in
             
-            print("URL: \(user.picture.large)")
             
             cell.userImageView.loadImage(url: user.picture.large)
             
@@ -44,7 +43,7 @@ class ViewController: UIViewController {
                 case 4:
                     userLbl.text = user.email
                 case 5:
-                    userLbl.text = "12/02/1945"
+                    userLbl.text = DateUtility.formatDate(from: user.dateOfBirth.date, input: "yyyy-MM-dd'T'HH:mm:ss.SSSZ", output: "dd/MM/yyyy")
                 default:
                     print("No")
                 }
