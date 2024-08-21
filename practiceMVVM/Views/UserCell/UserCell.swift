@@ -8,7 +8,15 @@
 import UIKit
 
 class UserCell: UITableViewCell {
-
+    
+    
+    @IBOutlet var labelCollections: [UILabel]!
+    
+    @IBOutlet weak var userImageView: UIImageView!
+    
+    @IBOutlet weak var imageWrapperView: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
